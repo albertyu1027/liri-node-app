@@ -57,6 +57,7 @@ function spotifyFunc() {
   spotify
   .search({ type: 'track', query: songTitle2})
   .then(function(response) {
+ 
     console.log("Artist: " + response.tracks.items[0].album.artists[0].name);
     console.log("Song Name: " + response.tracks.items[0].name);
     console.log("Preview Song: " + response.tracks.items[0].album.external_urls.spotify)
